@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition-duration:.2s ;
+  }
+  html{
+    margin: 0px;
+    padding: 0px;
+  }
+  .container-fluid{
+    margin: 0px;
+    padding: 0px;
+  }
+  #navbar .nav{
+    display: flex;
+    color: black;
+    padding-left: 20px;
+    align-items: center;
+    font-family: 'Arvo', serif;
+    text-decoration: none;
+  }
+  #navbar a:hover {
+    text-shadow: 1px 1px 2px grey;
+    transform: scale(1.1);
+  }
+  #navbar{
+    display: flex;
+    background-color: blanchedalmond;
+    height: 50px;
+    width: 100vw;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 75px;
+    position: fixed;  
+    z-index: 99;
+  }
+  #logo{
+    margin-top: 5px;
+    margin-left: 35px;
+  }
+  #swiggy{
+    position: absolute;
+    right: 30px;
+  }
+  #zomato{
+    position: absolute;
+    right: 90px;
+  }
+#box{
+    height: 240;
+     width: 200;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+     box-sizing: content-box;
+    
+}
+.row{
+
+
+padding: 90px;
+
+
+}
+@media only screen and (max-width:678px)  {
+    .row{
+        padding: 10px;
+    }
+} 
