@@ -22,14 +22,14 @@
 
 <body>
   <!-- desktop Navigation Bar -->
-  <div id="navbar" class="d-none d-lg-flex">
+  <div id="navbar" class="d-flex">
     <a href="#home" id="logo"><img src="./images/logo.svg" alt="" width="200px" height="40px"></a>
-    <a href="./index.html" class="nav">Home</a>
-    <a href="./gallery.html" class="nav">Gallery</a>
-    <a href="./contact.html" class="nav">Contact Us</a>
-    <a href="./about.html" class="nav">About Us</a>
-    <a href="#icon" class="nav" id="swiggy"><img src="./images/swiggy.svg" height="50px" alt=""></a>
-    <a href="#icon" class="nav" id="zomato"><img src="./images/zomato.svg" height="50px" alt=""></a>
+    <a href="./index.html" class="nav d-none d-lg-flex">Home</a>
+    <a href="./gallery.html" class="nav d-none d-lg-flex">Gallery</a>
+    <a href="./contact.html" class="nav d-none d-lg-flex">Contact Us</a>
+    <a href="./about.html" class="nav d-none d-lg-flex">About Us</a>
+    <a href="#icon" class="nav d-none d-lg-flex" id="swiggy"><img src="./images/swiggy.svg" height="50px" alt=""></a>
+    <a href="#icon" class="nav d-none d-lg-flex" id="zomato"><img src="./images/zomato.svg" height="50px" alt=""></a>
   </div>
 
 
@@ -52,9 +52,7 @@
     <button id="menu" class="openbtn d-lg-none" onclick="openNav()">☰ </button>
   </div>
 
-  <a href="./index.html"><img src="./images/mainlogo.svg" class="d-lg-none "
-      style="position: fixed; z-index: 99;top: 10px;left: 10px;" width="40px" alt=""></a>
-
+ 
   <!-- Carousel -->
   <div class="container-fluid" id="carousel">
 
@@ -82,7 +80,7 @@
       </div>
     </div>
   </div>
-<hr class="d-md-none">
+
   <!-- images with quote -->
   <div class="container-fluid">
     <!-- outlet -->
@@ -93,14 +91,15 @@
       </div>
 
     </div>
-    <hr class="d-md-none">
+
     <!-- sweets -->
 
     <div class="row">
+      <div class="d-md-none col-md-6 hphoto" id="sweets"></div>
       <div class="col-md-6 home_text "> <a href=""><i class="fas fa-quote-left  quote"></i> Dessert is the best time of
           day.......</a>
       </div>
-      <div class="col-md-6 hphoto" id="sweets"></div>
+      <div class="d-none d-md-flex col-md-6 hphoto" id="sweets"></div>
     </div>
 
     <!-- namkeen -->
@@ -110,15 +109,16 @@
       </div>
     </div>
     <!-- snacks -->
-    <hr class="d-md-none">
+
     <div class="row">
+      <div class="d-md-none col-md-6 hphoto" id="snacks"></div>
       <div class="col-md-6 home_text "> <a href=""><i class="fas fa-quote-left  quote"></i> We are here for the
           snacks</a>
       </div>
-      <div class="col-md-6 hphoto" id="snacks"></div>
+      <div class="d-none d-md-flex col-md-6 hphoto" id="snacks"></div>
 
     </div>
-    
+
     <!-- pizza -->
 
     <div class="row">
@@ -127,15 +127,16 @@
           possible. ...</a>
       </div>
     </div>
-    <hr class="d-md-none">
+
     <!-- idli -->
 
     <div class="row">
+      <div class="d-md-none col-md-6 hphoto" id="idli"></div>
 
       <div class="col-md-6 home_text "> <a href=""><i class="fas fa-quote-left  quote"></i> Idli is the world's shortest
           lived food</a>
       </div>
-      <div class="col-md-6 hphoto" id="idli"></div>
+      <div class="d-none d-md-flex col-md-6 hphoto" id="idli"></div>
     </div>
 
   </div>
@@ -145,7 +146,7 @@
       <div class="row" id="footer_text">
         <div class="col-md-6">Add. Sethi Gate ,Sudama Nagar,Indore <br> Ph.0731-2481567
         </div>
-        
+
         <div class="col-md-6">Add. CAT Road ,Opp. Surya Mandir ,Rau <br>Ph.06260257592</div>
 
 
@@ -161,7 +162,7 @@
                 class="fas fa-envelope fa-2x"></i></a>
             <a class="icons" href="https://facebook.com/kanak.ghost" target="-blank"><i
                 class="fab fa-facebook-square fa-2x"></i></a>
-            <a class="icons" href="Tel:+919826431567" ><i class="fa fa-phone fa-2x " aria-hidden="true"
+            <a class="icons" href="Tel:+919826431567"><i class="fa fa-phone fa-2x " aria-hidden="true"
                 style="transform: scaleX(-1);-moz-transform: scaleX(-1);-webkit-transform: scaleX(-1);-ms-transform: scaleX(-1);"></i></a>
 
 
@@ -177,31 +178,18 @@
 
 
 
+  <script type="text/javascript">
 
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) {
-            $('#scroll').fadeIn();
-          } else {
-            $('#scroll').fadeOut();
-          }
-        });
-        $('#scroll').click(function () {
-          $("html, body").animate({ scrollTop: 0 }, 600);
-          return false;
-        });
-      });
-      function openNav() {
-        document.getElementById("mySidebar").style.width = "150px";
-      }
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "150px";
+    }
 
-      function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-      }
-    </script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="./js/all.js"></script>
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+    }
+  </script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="./js/all.js"></script>
 </body>
 
 </html>

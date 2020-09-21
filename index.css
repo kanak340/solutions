@@ -36,7 +36,7 @@
     border-bottom-left-radius: 75px;
     border-bottom-right-radius: 75px;
     position: fixed;  
-    z-index: 99;
+    z-index: 97;
   }
   #logo{
     margin-top: 5px;
@@ -95,10 +95,10 @@
   cursor: pointer;
   background-color: blanchedalmond;
   color: black;
-  padding: 10px 15px;
+  
   border: none;
   font-weight: bolder;
-  border-radius: 25px;
+
   }
 
 .openbtn:hover {
@@ -107,7 +107,8 @@
 #main {
   z-index: 98;
   position: fixed;
-  right: 0;
+  right: 25px;
+  top: -5px;
   transition: margin-left .5s;
   padding: 16px;
 }
