@@ -5,9 +5,9 @@
   <meta name="viewport" content="width-device-width, initial-scale=1.2">
   <title>Annapurna</title>
 
-  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <!--bootstrap-->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -20,7 +20,6 @@
 
 </head>
 
-
 <body>
   <!-- desktop Navigation Bar -->
   <div id="navbar" class="d-none d-lg-flex">
@@ -32,7 +31,10 @@
     <a href="#icon" class="nav" id="swiggy"><img src="./images/swiggy.svg" height="50px" alt=""></a>
     <a href="#icon" class="nav" id="zomato"><img src="./images/zomato.svg" height="50px" alt=""></a>
   </div>
-<!-- mobile navigation -->
+
+
+
+  <!-- mobile navigation -->
   <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <a href="./index.html" onclick="closeNav()">Home</a>
@@ -43,13 +45,16 @@
     <a href="./contact.html" onclick="closeNav()">Contact Us</a>
   </div>
 
+
+  <!-- floating mobile logo -->
+
   <div id="main">
     <button id="menu" class="openbtn d-lg-none" onclick="openNav()">☰ </button>
-
   </div>
 
-  
-  <a href="./index.html"><img src="./images/mainlogo.svg" class="d-lg-none " style="position: fixed; z-index: 99;top: 10px;left: 10px;"  width="40px" alt=""></a>
+  <a href="./index.html"><img src="./images/mainlogo.svg" class="d-lg-none "
+      style="position: fixed; z-index: 99;top: 10px;left: 10px;" width="40px" alt=""></a>
+
   <!-- Carousel -->
   <div class="container-fluid" id="carousel">
 
@@ -64,82 +69,76 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="./images/cau/1.jpg" alt="Los Angeles" style="width:100%; max-height: 100vh;">
+          <img src="./images/cau/1.jpg" alt="Los Angeles" style="width:100vw; max-height: 100vh;">
         </div>
 
         <div class="item">
-          <img src="./images/cau/2.jpg" alt="Chicago" style="width:100%;max-height: 100vh; ">
+          <img src="./images/cau/2.jpg" alt="Chicago" style="width:100vw;max-height: 100vh; ">
         </div>
 
         <div class="item">
-          <img src="./images/cau/3.jpg" alt="New york" style="width:100%;max-height: 100vh;">
+          <img src="./images/cau/3.jpg" alt="New york" style="width:100vw;max-height: 100vh;">
         </div>
       </div>
-
-      <!-- Left and right controls -->
-
     </div>
   </div>
-
-  <!-- Images with quote -->
+<hr class="d-md-none">
+  <!-- images with quote -->
   <div class="container-fluid">
     <!-- outlet -->
-    <div class="row">
-      <div class="col-md-6" id="home_text"> <i class="fas fa-quote-left"
-          style="position: relative; top:-50px ;right:20px"></i> <a href="">One stop for all your cravings</a>
+    <div class="row ">
+      <div class="col-md-6 hphoto" id="outlet"></div>
+      <div class="col-md-6 home_text "> <a href=""><i class="fas fa-quote-left quote"></i>One stop for all your
+          cravings</a>
       </div>
-      <div class="col-md-6" id="outlet"></div>
-    </div>
 
-
-    <hr class="d-md-none">
-    <!-- Sweets -->
-
-
-
-    <div class="row">
-      <div class="col-md-6" id="sweets"></div>
-      <div class="col-md-6" id="home_text"> <i class="fas fa-quote-left"
-          style="position: relative; top:-100px ;right:20px"></i> <a href=""> Dessert is the best time of day.......</a>
-      </div>
     </div>
     <hr class="d-md-none">
-    <!-- Namkeen -->
+    <!-- sweets -->
 
     <div class="row">
-      <div class="col-md-6" id="home_text"> <i class="fas fa-quote-left"
-          style="position: relative; top:-70px ;right:20px"></i> <a href=""> Feeling Hungry????</a>
+      <div class="col-md-6 home_text "> <a href=""><i class="fas fa-quote-left  quote"></i> Dessert is the best time of
+          day.......</a>
       </div>
-      <div class="col-md-6" id="namkeen"></div>
+      <div class="col-md-6 hphoto" id="sweets"></div>
     </div>
-    <hr class="d-md-none">
-    <!-- Sancks -->
 
+    <!-- namkeen -->
     <div class="row">
-      <div class="col-md-6" id="snacks"></div>
-      <div class="col-md-6" id="home_text"> <i class="fas fa-quote-left"
-          style="position: relative; top:-70px ;right:20px"></i> <a href=""> We are here for the snacks</a>
+      <div class="col-md-6 hphoto" id="namkeen"></div>
+      <div class="col-md-6 home_text "> <a href=""><i class="fas fa-quote-left  quote"></i> Feeling Hungry????</a>
       </div>
     </div>
+    <!-- snacks -->
     <hr class="d-md-none">
+    <div class="row">
+      <div class="col-md-6 home_text "> <a href=""><i class="fas fa-quote-left  quote"></i> We are here for the
+          snacks</a>
+      </div>
+      <div class="col-md-6 hphoto" id="snacks"></div>
+
+    </div>
+    
     <!-- pizza -->
 
     <div class="row">
-      <div class="col-md-6" id="home_text"> <i class="fas fa-quote-left"
-          style="position: relative; top:-90px ;right:20px"></i> <a href=""> Pizza makes anything possible. ...</a>
+      <div class="col-md-6 hphoto" id="pizza"></div>
+      <div class="col-md-6 home_text "> <a href=""><i class="fas fa-quote-left  quote"></i> Pizza makes anything
+          possible. ...</a>
       </div>
-      <div class="col-md-6" id="pizza"></div>
     </div>
     <hr class="d-md-none">
     <!-- idli -->
-    <div class="row">
-      <div class="col-md-6" id="idli"></div>
-      <div class="col-md-6" id="home_text"> <i class="fas fa-quote-left"
-          style="position: relative; top:-140px ;right:20px"></i> <a href="">Idli is the world's shortest lived food</a>
-      </div>
-    </div>
-  </div>
 
+    <div class="row">
+
+      <div class="col-md-6 home_text "> <a href=""><i class="fas fa-quote-left  quote"></i> Idli is the world's shortest
+          lived food</a>
+      </div>
+      <div class="col-md-6 hphoto" id="idli"></div>
+    </div>
+
+  </div>
   <footer>
 
     <div class="container-fluid">
@@ -178,37 +177,31 @@
 
 
 
-  <a href="#" id="scroll" style="display: none;"><span><i class="fas fa-arrow-up"></i></span></a>
 
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('#scroll').fadeIn();
+          } else {
+            $('#scroll').fadeOut();
+          }
+        });
+        $('#scroll').click(function () {
+          $("html, body").animate({ scrollTop: 0 }, 600);
+          return false;
+        });
+      });
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "150px";
+      }
 
-
-
-
-
-  <script type="text/javascript">
-    $(document).ready(function(){ 
-    $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#scroll').fadeIn(); 
-        } else { 
-            $('#scroll').fadeOut(); 
-        } 
-    }); 
-    $('#scroll').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 600); 
-        return false; 
-    }); 
-});
-function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-    }
-  </script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="./js/all.js"></script>
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+      }
+    </script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="./js/all.js"></script>
 </body>
 
 </html>
